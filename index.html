@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <section class="section">
         <h1>Cash-Register-Manager</h1>
-        <p>Enter the Bill Amount and Calculate</p>
+        <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
         <label for="bill-Amount">Bill-Amount</label>
         <input id="bill-Amount"/>
 
@@ -19,8 +19,9 @@
 
         <button class="submitbtn">Submit</button>
         <div id="errormessage"></div>
+        <div id="output">
         <table class="table-change">
-            <caption>Return Change</caption>
+            <div class="change">Return Change</div>
             <tr>
                 <th>No.of.notes</th>
                 <td class="no-of-notes"></td>
@@ -43,7 +44,8 @@
 
             </tr>
         </table>
-    </div>
+    </section>
+</div>
 
     <script src="app.js"></script>
 </body>

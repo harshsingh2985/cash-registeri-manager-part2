@@ -1,5 +1,66 @@
-.container{
-    display:flex;
-    flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,500&display=swap');
+
+body{
+    margin: 0;
+    font-family:  'Montserrat', sans-serif;   
+}
+.section{
+    width:100%;
+    max-width: 500px;
+    min-height: 200px;
+    margin:auto;
+    padding:2rem 1rem;
+    text-align: center;
+    background-color: #e9d5ff;
 
 }
+label{
+    font-size: 1.3rem;
+    padding: 1.5rem 1rem 0.5rem;
+    color:black;
+}
+p{
+    color:purple;
+
+}
+h1{
+    color:purple;
+
+}
+input{
+    width:95%;
+    padding:1rem;
+    height:25px;
+    display: block;
+}
+button{
+    padding:0.5rem 1rem;
+    display: block;
+    font-size: 1rem;
+    border: none;
+    margin:1rem auto 0;
+    background: purple;
+    color:white;
+    font-weight: bold;
+}
+
+#output{
+    margin:1rem 0;
+
+}
+#output table,th,td{
+    padding:0.2rem;
+    background-color: #e9d5ff;
+    border:2px solid black;
+    border-collapse: collapse;
+    /* width:95%; */
+
+}
+.change{
+    text-align: center;
+}
+
+
+
+
+
