@@ -16,12 +16,12 @@ button.addEventListener("click",function validate(){
 
         if(Number(cashgiven.value)>=Number(billamount.value)){
             hidemessage();
-            
+
             const amountToretuned=cashgiven.value-billamount.value;
             calculatechange(amountToretuned);
 
         }else{
-            showmessage("Do you want to wash the plates")
+            showmessage("The Cash Amount Should Be Greater than the Bill Amount")
         }
     }else{
         showmessage("please enter the valid amount")
