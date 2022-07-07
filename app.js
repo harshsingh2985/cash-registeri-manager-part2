@@ -11,9 +11,11 @@ const notesavaible=[2000,500,100,20,10,5,1];
 const noofnotes=document.querySelectorAll(".no-of-notes");
 
 button.addEventListener("click",function validate(){
+    hidemessage();
     if(Number(billamount.value)>0){
 
         if(Number(cashgiven.value)>=Number(billamount.value)){
+            hidemessage();
             
             const amountToretuned=cashgiven.value-billamount.value;
             calculatechange(amountToretuned);
