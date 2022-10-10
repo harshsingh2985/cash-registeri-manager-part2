@@ -20,10 +20,17 @@ button.addEventListener("click",function validate(){
             const amountToretuned=cashgiven.value-billamount.value;
             calculatechange(amountToretuned);
 
-        }else{
+        }
+        else{
             showmessage("The Cash Amount Should Be Greater than the Bill Amount")
         }
-    }else{
+            
+    }
+    else if(cashgiven.value===billamount.value){
+        showmessage("The Bill is Already paid")
+    }
+
+    else{
         showmessage("please enter the valid amount")
 
     }
@@ -35,8 +42,8 @@ function calculatechange(amountToretuned){
         const NumberOFNOTES=Math.trunc(amountToretuned/notesavaible[i]);
         amountToretuned=amountToretuned %notesavaible[i];
         noofnotes[i].innerText=NumberOFNOTES;
-
     }
+
 
 }
 function showmessage(msg){
